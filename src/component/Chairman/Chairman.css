@@ -1,0 +1,14 @@
+
+.chairman{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.man img{
+    width: 300px;
+    height: 200px;
+}
+.studen{
+    background-color: slategray;
+    padding: 20px;
+}

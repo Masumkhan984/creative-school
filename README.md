@@ -19,7 +19,7 @@ To build this project we used HTML, CSS, JavaScript and create-react-app.
 
 # Deployment
 ## The site has Deployed in netlify.com->
-netlify: https://app.netlify.com/teams/masumkhan984/sites
+* Site: https://creative-school.netlify.app/allSer/allServices
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

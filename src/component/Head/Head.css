@@ -1,0 +1,9 @@
+.banner{
+    width: 100%;
+    background-color: slategray;
+}
+.titleH{
+    font-size:xx-large;
+    color: rgb(239, 246, 234);
+    background-color: rgba(31, 30, 31, 0.294);
+}
