@@ -4,7 +4,6 @@ import './App.css';
 import About from './component/About/About';
 import AllServices from './component/AllCourse/AllCourses';
 import Contacts from './component/Contacts/Contacts';
-import Course from './component/Courses/Course';
 import Courses from './component/Courses/Courses';
 import Footer from './component/Footer/Footer';
 import Header from './component/Header/Header';

@@ -2,9 +2,14 @@
 import React from 'react';
 import { Card, Col, Container, Button } from 'react-bootstrap';
 import Rating from 'react-rating';
+import { useHistory } from 'react-router';
 
 const AllCourse = (props) => {
-    const {course_name, rating, course_title, details, fee, img, language, student_number} = props.all;
+    const {course_name, rating, course_title, details, fee, img, language, student_number, id} = props.all;
+    const history = useHistory()
+    const handleClick =(id) =>{
+        history.push(`/course/${id}`)
+    }
     return (
         <div>
             <Container>
@@ -29,7 +34,7 @@ const AllCourse = (props) => {
                         readonly/>
                         <br></br>
                         <span style={{display:"flex"}}><h1>${fee}</h1><h5>(30% off)</h5></span>
-                     <Button variant="primary">Add to Cart</Button>
+                     <Button onClick={()=>handleClick(id)} variant="primary">Course Details</Button>
                  </Card.Body>
              </Card>
           </Col> 

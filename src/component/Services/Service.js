@@ -5,12 +5,12 @@ import { useHistory } from 'react-router';
 import './Service.css'
 
 const Service = (props) => {
-    const {course_name, rating, course_title, details, fee, img, language, student_number} = props.course;
+    const {course_name, rating, course_title, details, fee, img, language, student_number, id} = props.course;
      const history = useHistory()
     // const { name, img, price} = props.product;
     // const {hanldleAddToCart} = props;
-    const handleClick =()=>{
-       history.push(`/allServices`)
+    const handleClick =(id)=>{
+       history.push(`/course/${id}`)
     }
     return (
         <div>
@@ -36,7 +36,7 @@ const Service = (props) => {
                         readonly/>
                         <br></br>
                         <span style={{display:"flex"}}><h1>${fee}</h1><h5>(30% off)</h5></span>
-                     <Button onClick={handleClick} variant="primary">Add to Cart</Button>
+                     <Button onClick={()=>handleClick(id)} variant="primary">Course Details</Button>
                  </Card.Body>
              </Card>
           </Col> 

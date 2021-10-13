@@ -1,18 +1,25 @@
 import React from 'react';
 import { Container} from 'react-bootstrap';
+import { useParams } from 'react-router';
 import useData from '../../Hooks/useData';
-import Course from './Course'
+import Course from './Course';
 
 
 
 const Courses = () => {
-    const [data, setData] = useData([]);
+    // const [data] = useData([]);
+    // let {courseID} = useParams();
+    // let oneCourse ={}
+    // for( const data1 of data){
+    //     if(data1.id === courseID){
+    //         oneCourse.push(data1)
+    //     }
+    // }
+    
     return (
         <div>
             <Container>
-                {
-                   data.map(course => <Course course={course}></Course>)
-                }
+                <Course></Course>
             </Container>
         </div>
     );
